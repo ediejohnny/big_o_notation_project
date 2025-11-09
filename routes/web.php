@@ -8,6 +8,7 @@ use App\Http\Controllers\OLinearitmicaController;
 use App\Http\Controllers\OQuadraticaController;
 use App\Http\Controllers\OCubicaController;
 use App\Http\Controllers\OExponencialController;
+use App\Http\Controllers\OFatorialController;
 use Illuminate\Support\Facades\Route;
 
 // Home page
@@ -21,5 +22,5 @@ Route::get('/o-linearitimica', [OLinearitmicaController::class, 'index'])->name(
 Route::get('/o-quadratica', [OQuadraticaController::class, 'index'])->name('o-quadratica');
 Route::get('/o-cubica', [OCubicaController::class, 'index'])->name('o-cubica');
 Route::get('/o-exponencial', [OExponencialController::class, 'index'])->name('o-exponencial');
-// Route::get('/o-fatorial', [OFatorialController::class, 'index'])->name('o-fatorial');
+Route::get('/o-fatorial', [OFatorialController::class, 'index'])->name('o-fatorial');
 
