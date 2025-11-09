@@ -237,7 +237,7 @@
             <footer class="border-t border-gray-200 dark:border-gray-700 mt-12 py-6">
                 <div class="px-4 sm:px-6 lg:px-8">
                     <p class="text-center text-sm text-gray-500 dark:text-gray-400">
-                        Big O Notation Learning Platform v0.2.0 • 
+                        Big O Notation Learning Platform v0.4.0 • 
                         <a href="https://github.com/ediejohnny/big_o_notation_project" target="_blank" class="hover:text-blue-600 dark:hover:text-blue-400">
                             GitHub
                         </a>
