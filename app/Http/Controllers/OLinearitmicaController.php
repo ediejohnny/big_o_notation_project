@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-<<<<<<< HEAD
 use Illuminate\View\View;
 
 class OLinearitmicaController extends Controller
@@ -15,14 +14,5 @@ class OLinearitmicaController extends Controller
     public function index(): View
     {
         return view('o-linearitimica.index');
-=======
-class OLinearitmicaController extends Controller
-{
-    public function index()
-    {
-        return view('o-linearitimica.index', [
-            'title' => 'O(n log n) - Linearítmica'
-        ]);
->>>>>>> origin/feature/o-exponencial-examples
     }
 }
