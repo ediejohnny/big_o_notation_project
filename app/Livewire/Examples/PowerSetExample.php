@@ -21,6 +21,10 @@ class PowerSetExample extends Component
 
     /** @var array<int,string> */
     public array $steps = [];
+    public ?string $errorMessage = null;
+
+    // Maximum safe value to prevent memory exhaustion
+    private const MAX_SAFE_ITEMS = 20;
 
     public function mount(): void
     {
@@ -45,15 +49,29 @@ class PowerSetExample extends Component
         $this->subsetCount = 0;
         $this->timeMs = 0.0;
         $this->steps = [];
+        $this->errorMessage = null;
     }
 
     public function run(): void
     {
         $this->subsets = [];
         $this->steps = [];
-        $start = microtime(true);
+        $this->errorMessage = null;
 
         $n = count($this->items);
+
+        // Validate input to prevent memory exhaustion
+        if ($n > self::MAX_SAFE_ITEMS) {
+            $this->errorMessage = "⚠️ ATENÇÃO: Mais de " . self::MAX_SAFE_ITEMS . " itens causam esgotamento de memória! Com n=" . $n . ", seriam 2^" . $n . " = " . number_format(pow(2, $n), 0, ',', '.') . " subconjuntos. Use no máximo " . self::MAX_SAFE_ITEMS . " itens para evitar travamento do navegador.";
+            return;
+        }
+
+        if ($n === 0) {
+            $this->errorMessage = "❌ Digite pelo menos um item separado por vírgula.";
+            return;
+        }
+
+        $start = microtime(true);
         $total = 1 << $n; // 2^n
         for ($mask = 0; $mask < $total; $mask++) {
             $subset = [];
