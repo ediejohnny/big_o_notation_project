@@ -1,5 +1,8 @@
 {
     "$schema": "https://json.schemastore.org/package.json",
+    "name": "big-o-notation-project",
+    "version": "0.1.0",
+    "description": "Interactive educational platform to learn Big O Notation through practical examples",
     "private": true,
     "type": "module",
     "scripts": {
