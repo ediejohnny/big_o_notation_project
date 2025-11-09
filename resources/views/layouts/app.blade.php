@@ -90,22 +90,22 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" 
-                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <a href="{{ route('o-linearitimica') }}" 
+                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg {{ request()->routeIs('o-linearitimica') ? 'bg-blue-50 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700' }} transition-colors">
                             <span class="mr-3">📉</span>
                             O(n log n) - Linearítmica
                         </a>
                     </li>
                     <li>
-                        <a href="#" 
-                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <a href="{{ route('o-quadratica') }}" 
+                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg {{ request()->routeIs('o-quadratica') ? 'bg-blue-50 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700' }} transition-colors">
                             <span class="mr-3">⚠️</span>
                             O(n²) - Quadrática
                         </a>
                     </li>
                     <li>
-                        <a href="#" 
-                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <a href="{{ route('o-cubica') }}" 
+                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg {{ request()->routeIs('o-cubica') ? 'bg-blue-50 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700' }} transition-colors">
                             <span class="mr-3">📦</span>
                             O(n³) - Cúbica
                         </a>
@@ -189,22 +189,22 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" 
-                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <a href="{{ route('o-linearitimica') }}" 
+                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg {{ request()->routeIs('o-linearitimica') ? 'bg-blue-50 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700' }} transition-colors">
                             <span class="mr-3">📉</span>
                             O(n log n) - Linearítmica
                         </a>
                     </li>
                     <li>
-                        <a href="#" 
-                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <a href="{{ route('o-quadratica') }}" 
+                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg {{ request()->routeIs('o-quadratica') ? 'bg-blue-50 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hoverbg-gray-700' }} transition-colors">
                             <span class="mr-3">⚠️</span>
                             O(n²) - Quadrática
                         </a>
                     </li>
                     <li>
-                        <a href="#" 
-                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <a href="{{ route('o-cubica') }}" 
+                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg {{ request()->routeIs('o-cubica') ? 'bg-blue-50 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700' }} transition-colors">
                             <span class="mr-3">📦</span>
                             O(n³) - Cúbica
                         </a>
