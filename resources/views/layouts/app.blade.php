@@ -69,8 +69,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" 
-                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <a href="{{ route('o-constante') }}" 
+                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg {{ request()->routeIs('o-constante') ? 'bg-blue-50 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700' }} transition-colors">
                             <span class="mr-3">⚡</span>
                             O(1) - Constante
                         </a>
@@ -168,8 +168,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" 
-                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <a href="{{ route('o-constante') }}" 
+                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg {{ request()->routeIs('o-constante') ? 'bg-blue-50 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700' }} transition-colors">
                             <span class="mr-3">⚡</span>
                             O(1) - Constante
                         </a>
@@ -232,10 +232,21 @@
             <div class="px-4 sm:px-6 lg:px-8 py-8">
                 @yield('content')
             </div>
+            
+            <!-- Footer -->
+            <footer class="border-t border-gray-200 dark:border-gray-700 mt-12 py-6">
+                <div class="px-4 sm:px-6 lg:px-8">
+                    <p class="text-center text-sm text-gray-500 dark:text-gray-400">
+                        Big O Notation Learning Platform v0.2.0 • 
+                        <a href="https://github.com/ediejohnny/big_o_notation_project" target="_blank" class="hover:text-blue-600 dark:hover:text-blue-400">
+                            GitHub
+                        </a>
+                    </p>
+                </div>
+            </footer>
         </main>
     </div>
 
     @livewireScripts
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </body>
 </html>
