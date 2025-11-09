@@ -1,13 +1,16 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\OConstantController;
 use Illuminate\Support\Facades\Route;
 
 // Home page
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-// Big O complexity routes (to be implemented)
-// Route::get('/o-constante', [OConstanteController::class, 'index'])->name('o-constante');
+// Big O complexity routes
+Route::get('/o-constante', [OConstantController::class, 'index'])->name('o-constante');
+
+// To be implemented
 // Route::get('/o-logaritmico', [OLogaritmicoController::class, 'index'])->name('o-logaritmico');
 // Route::get('/o-linear', [OLinearController::class, 'index'])->name('o-linear');
 // Route::get('/o-linearitimica', [OLinearitmicaController::class, 'index'])->name('o-linearitimica');
