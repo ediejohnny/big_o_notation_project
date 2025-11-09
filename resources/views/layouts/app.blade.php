@@ -111,8 +111,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" 
-                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <a href="{{ route('o-exponencial') }}" 
+                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg {{ request()->routeIs('o-exponencial') ? 'bg-blue-50 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700' }} transition-colors">
                             <span class="mr-3">💥</span>
                             O(2ⁿ) - Exponencial
                         </a>
@@ -210,8 +210,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#" 
-                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <a href="{{ route('o-exponencial') }}" 
+                           class="flex items-center px-3 py-2 text-sm font-medium rounded-lg {{ request()->routeIs('o-exponencial') ? 'bg-blue-50 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700' }} transition-colors">
                             <span class="mr-3">💥</span>
                             O(2ⁿ) - Exponencial
                         </a>
