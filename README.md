@@ -27,6 +27,7 @@ This platform is designed to help young programmers (ages 16+) understand algori
 ### Interactive Components
 
 Built with **Laravel Livewire** for real-time interactivity:
+
 - Edit arrays and input values directly in the browser
 - Execute algorithms and see instant results
 - Visualize algorithm execution step-by-step
@@ -58,80 +59,52 @@ Built with **Laravel Livewire** for real-time interactivity:
 ## 🔧 Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/YOUR_USERNAME/big_o_notation_project.git
    cd big_o_notation_project
    ```
-
 2. **Install PHP dependencies**
+
    ```bash
    composer install
    ```
-
 3. **Install JavaScript dependencies**
+
    ```bash
    npm install
    ```
-
 4. **Set up environment**
+
    ```bash
    cp .env.example .env
    php artisan key:generate
    ```
-
 5. **Create database**
+
    ```bash
    touch database/database.sqlite
    php artisan migrate
    ```
-
 6. **Build assets**
+
    ```bash
    npm run build
    # or for development with hot reload
    npm run dev
    ```
-
 7. **Start development server**
+
    ```bash
    php artisan serve
    ```
-
 8. **Access the application**
-   
+
    Open your browser and navigate to `http://localhost:8000`
 
 ## 🎨 Code Conventions
 
 This project follows strict coding standards:
-
-### No Else Rule
-
-**We NEVER use `else` or `elseif`** - Instead, we use:
-- Early return pattern
-- Guard clauses
-- Independent if statements
-- Pattern matching (match/switch when appropriate)
-
-```php
-// ❌ WRONG - Don't use else
-public function process($data) {
-    if ($data === null) {
-        return 'null';
-    } else {
-        return 'valid';
-    }
-}
-
-// ✅ CORRECT - Early return
-public function process($data) {
-    if ($data === null) {
-        return 'null';
-    }
-    
-    return 'valid';
-}
-```
 
 ### Naming Conventions
 
